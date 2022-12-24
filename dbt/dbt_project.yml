@@ -1,0 +1,10 @@
+name: 'credit_application'
+
+version: '1.0.0'
+config-version: 2
+
+profile: 'credit_application'
+
+macro-paths: ["macros"]
+model-paths: ["models"]
+seed-paths: ["seeds"]

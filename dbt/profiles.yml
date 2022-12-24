@@ -1,0 +1,9 @@
+credit_application:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      dataset: data_fellowship
+      threads: 8
+      keyfile: /opt/airflow/service-account.json

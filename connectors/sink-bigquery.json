@@ -1,0 +1,13 @@
+{
+    "connector.class"                         : "com.wepay.kafka.connect.bigquery.BigQuerySinkConnector",
+    "topics"                                  : "stream_application_record, stream_credit_record",
+    "autoCreateTables"                        : "true",
+    "allowNewBigQueryFields"                  : "true",
+    "allowBigQueryRequiredFieldRelaxation"    : "true",
+    "allowSchemaUnionization"                 : "true",
+    "bigQueryPartitionDecorator"              : "false",
+    "schemaRetriever"                         : "com.wepay.kafka.connect.bigquery.retrieve.IdentitySchemaRetriever",
+    "project"                                 : "lyrical-country-370008",
+    "defaultDataset"                          : "data_fellowship",
+    "keyfile"                                 : "/home/appuser/service-account.json"
+}
